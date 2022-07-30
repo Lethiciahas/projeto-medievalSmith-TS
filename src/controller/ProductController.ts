@@ -13,6 +13,11 @@ class ProductsController {
     const products = await this.service.getAll();
     return res.status(200).json(products);
   }
+
+  public async create(req: Request, res: Response): Promise<Response> {
+    const products = await this.service.create(req.body);
+    return res.status(201).json(products);
+  }
 }
 
 export default ProductsController;
