@@ -9,7 +9,7 @@ interface User {
 
 interface Orders {
   id?: number,
-  userId: number,
+  userId?: number,
 }
 
 interface Products {

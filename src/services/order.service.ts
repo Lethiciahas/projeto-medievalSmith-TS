@@ -1,8 +1,8 @@
 import connection from '../models/connection';
 
-import OrdersModel from '../models/product.model';
+import OrdersModel from '../models/order.model';
 
-// import { Orders } from '../interfaces/db_interfaces';
+import { Orders } from '../interfaces/db_interfaces';
 
 class OrdersService {
   public model: OrdersModel;
@@ -11,7 +11,7 @@ class OrdersService {
     this.model = model;
   }
 
-//  getAll = async (): Promise<Orders[]> => this.model.getAll();
+  listAll = async (): Promise<Orders[]> => this.model.listAll();
 }
 
 export default OrdersService;

@@ -1,15 +1,13 @@
-/* import { Router } from 'express';
+import { Router } from 'express';
 
-import OrdersController from '../controller/OrdersController';
+import OrdersController from '../controller/OrdersControlles';
 
 const ordersRouter = Router();
 
-const OrdersController = new OrdersController();
+const ordersController = new OrdersController();
 
 console.log(this);
 
-ordersRouter.get('/orders', (req, res) => ordersController.getAll(req, res));
+ordersRouter.get('/orders', (req, res) => ordersController.listAll(req, res));
 
-ordersRouter.post('/orders', (req, res) => ordersController.create(req, res));
-
-export default ordersRouter; */
+export default ordersRouter;
