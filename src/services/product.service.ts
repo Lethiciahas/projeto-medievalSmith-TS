@@ -1,6 +1,6 @@
 import connection from '../models/connection';
 
-import ProductsModel from '../models/ProductModel';
+import ProductsModel from '../models/product.model';
 
 import { Products } from '../interfaces/db_interfaces';
 
